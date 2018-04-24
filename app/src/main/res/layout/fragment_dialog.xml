@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/title_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/title_name_edit_text"
+            android:inputType="text"
+            android:maxLength="20"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+        <EditText
+            android:id="@+id/description_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_name_edit_text"
+            android:hint="@string/description_edit_text"
+            android:maxLines="2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+        <EditText
+            android:id="@+id/date_picker_select_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/description_edit_text"
+            android:maxLength="20"
+            android:onClick="showStartDatePicker"
+            android:text="Select Date"/>
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date_picker_select_date"
+            android:onClick="buttonClicked"
+            android:text="@string/save_button" />
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/date_picker_select_date"
+            android:onClick="closeAddTask"
+            android:text="@string/cancel_button" />
+
+    </RelativeLayout>
+</ScrollView>

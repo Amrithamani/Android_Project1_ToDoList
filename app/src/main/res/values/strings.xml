@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">to-do</string>
+
+    <string name="default_title_name">[List Title]</string>
+
+    <string name="default_description_name">[Description]</string>
+
+    <string name="default_timestamp_name">[Timestamp]</string>
+
+    <string name="default_incomplete_image_name">Incomplete</string>
+
+    <string name="title_name_edit_text">Title</string>
+
+    <string name="description_edit_text">Description</string>
+
+    <string name="timestamp_edit_text">Timestamp</string>
+
+    <string name="save_button">Save</string>
+
+    <string name="cancel_button">Cancel</string>
+
+</resources>
